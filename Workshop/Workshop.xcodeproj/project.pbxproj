@@ -13,7 +13,7 @@
 		5295797920416DB000270E80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5295797820416DB000270E80 /* Assets.xcassets */; };
 		5295797C20416DB000270E80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5295797A20416DB000270E80 /* LaunchScreen.storyboard */; };
 		52CF1CA9204831090002C5BF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CF1CA8204831090002C5BF /* Extensions.swift */; };
-		52FF582E206CDB1F00AB86E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52FF582D206CDB1F00AB86E8 /* GoogleService-Info.plist */; };
+		81CA01F320A44CE100BA7EFA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81CA01F220A44CE100BA7EFA /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +25,8 @@
 		5295797B20416DB000270E80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5295797D20416DB000270E80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52CF1CA8204831090002C5BF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		52FF582D206CDB1F00AB86E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5CD39B9972F5645E9B9AE292 /* Pods-Workshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workshop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Workshop/Pods-Workshop.debug.xcconfig"; sourceTree = "<group>"; };
+		81CA01F220A44CE100BA7EFA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D35F309EC0DB53FCDB0C79D8 /* Pods-Workshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workshop.release.xcconfig"; path = "Pods/Target Support Files/Pods-Workshop/Pods-Workshop.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,7 +69,7 @@
 				5295797820416DB000270E80 /* Assets.xcassets */,
 				5295797D20416DB000270E80 /* Info.plist */,
 				52CF1CA8204831090002C5BF /* Extensions.swift */,
-				52FF582D206CDB1F00AB86E8 /* GoogleService-Info.plist */,
+				81CA01F220A44CE100BA7EFA /* GoogleService-Info.plist */,
 				5295796F20416DB000270E80 /* Products */,
 			);
 			path = Workshop;
@@ -112,7 +112,6 @@
 				5295796B20416DB000270E80 /* Frameworks */,
 				5295796C20416DB000270E80 /* Resources */,
 				3C25379F4A339CB12BBB842B /* [CP] Embed Pods Frameworks */,
-				4511EEAF21F9E04A74226FFB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,7 +163,7 @@
 			files = (
 				5295797C20416DB000270E80 /* LaunchScreen.storyboard in Resources */,
 				5295797920416DB000270E80 /* Assets.xcassets in Resources */,
-				52FF582E206CDB1F00AB86E8 /* GoogleService-Info.plist in Resources */,
+				81CA01F320A44CE100BA7EFA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,21 +192,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Workshop/Pods-Workshop-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4511EEAF21F9E04A74226FFB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Workshop/Pods-Workshop-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DD90F9B6D5077437720B577B /* [CP] Check Pods Manifest.lock */ = {
