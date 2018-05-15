@@ -33,8 +33,8 @@ class ViewController: UIViewController {
 	}()
     
     @objc func handleTextInputChange() {
-        let isFormValid = emailTextField.text?.characters.count ?? 0 > 0 &&
-            usernameTextField.text?.characters.count ?? 0 > 0 && passwordTextField.text?.characters.count ?? 0 > 0
+        let isFormValid = emailTextField.text?.count ?? 0 > 0 &&
+            usernameTextField.text?.count ?? 0 > 0 && passwordTextField.text?.count ?? 0 > 0
         
         if isFormValid {
             signUpButton.isEnabled = true
@@ -85,9 +85,9 @@ class ViewController: UIViewController {
 	}()
 	
 	@objc func handleSignUp (){
-        guard let email = emailTextField.text, email.characters.count > 0 else { return }
-        guard let username = usernameTextField.text, username.characters.count > 0  else { return }
-        guard let password = passwordTextField.text, password.characters.count > 0  else { return }
+        guard let email = emailTextField.text, email.count > 0 else { return }
+        guard let username = usernameTextField.text, username.count > 0  else { return }
+        guard let password = passwordTextField.text, password.count > 0  else { return }
         
 		
 		Auth.auth().createUser(withEmail: email, password: password, completion: { (user:User?, error: Error?) in
@@ -98,6 +98,18 @@ class ViewController: UIViewController {
 				
 			}
 			print("Successfully created user:", user?.uid ?? "")
+            
+            guard let uid = user?.uid else { return }
+            let values = [uid: 1]
+            Database.database().reference().child("users").setValue(values, withCompletionBlock: { (err, ref) in
+                
+                if let err = err {
+                    print("Failed to save user into db:",err)
+                    return
+                }
+                
+                print("Successfully saved user info to db")
+            })
 		})
 		
 	}
