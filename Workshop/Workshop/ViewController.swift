@@ -100,16 +100,20 @@ class ViewController: UIViewController {
 			print("Successfully created user:", user?.uid ?? "")
             
             guard let uid = user?.uid else { return }
-            let values = [uid: 1]
-            Database.database().reference().child("users").setValue(values, withCompletionBlock: { (err, ref) in
-                
+            
+            let usernameValues = ["username": username]
+            let values = [uid: usernameValues ]
+            
+            Database.database().reference().child("users").updateChildValues(values, withCompletionBlock: { (err, ref) in
                 if let err = err {
                     print("Failed to save user into db:",err)
                     return
                 }
                 
                 print("Successfully saved user info to db")
+                
             })
+           
 		})
 		
 	}
