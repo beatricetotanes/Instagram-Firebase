@@ -13,6 +13,8 @@
 		5295797920416DB000270E80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5295797820416DB000270E80 /* Assets.xcassets */; };
 		5295797C20416DB000270E80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5295797A20416DB000270E80 /* LaunchScreen.storyboard */; };
 		52CF1CA9204831090002C5BF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CF1CA8204831090002C5BF /* Extensions.swift */; };
+		81058C9B20AD69DD00EF483C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81058C9A20AD69DD00EF483C /* MainTabBarController.swift */; };
+		81058C9D20AD6AB700EF483C /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81058C9C20AD6AB700EF483C /* UserProfileController.swift */; };
 		81CA01F320A44CE100BA7EFA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81CA01F220A44CE100BA7EFA /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,8 @@
 		5295797D20416DB000270E80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52CF1CA8204831090002C5BF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		5CD39B9972F5645E9B9AE292 /* Pods-Workshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workshop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Workshop/Pods-Workshop.debug.xcconfig"; sourceTree = "<group>"; };
+		81058C9A20AD69DD00EF483C /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		81058C9C20AD6AB700EF483C /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserProfileController.swift; path = Workshop/UserProfileController.swift; sourceTree = SOURCE_ROOT; };
 		81CA01F220A44CE100BA7EFA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D35F309EC0DB53FCDB0C79D8 /* Pods-Workshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workshop.release.xcconfig"; path = "Pods/Target Support Files/Pods-Workshop/Pods-Workshop.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +69,8 @@
 			children = (
 				52CF1CA7204830DC0002C5BF /* Utilities */,
 				5295797120416DB000270E80 /* AppDelegate.swift */,
+				81058C9A20AD69DD00EF483C /* MainTabBarController.swift */,
+				81058C9C20AD6AB700EF483C /* UserProfileController.swift */,
 				5295797320416DB000270E80 /* ViewController.swift */,
 				5295797820416DB000270E80 /* Assets.xcassets */,
 				5295797D20416DB000270E80 /* Info.plist */,
@@ -221,6 +227,8 @@
 			files = (
 				5295797420416DB000270E80 /* ViewController.swift in Sources */,
 				52CF1CA9204831090002C5BF /* Extensions.swift in Sources */,
+				81058C9B20AD69DD00EF483C /* MainTabBarController.swift in Sources */,
+				81058C9D20AD6AB700EF483C /* UserProfileController.swift in Sources */,
 				5295797220416DB000270E80 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
