@@ -13,8 +13,7 @@ class MainTabBarController: UITabBarController {
         super.viewDidLoad()
         
         let layout = UICollectionViewFlowLayout()
-        let userProfileController = UserProfileController()
-            (collectionViewLayout: layout)
+        let userProfileController = UserProfileController(collectionViewLayout: layout)
         
         let navController = UINavigationController(rootViewController: userProfileController)
         
